@@ -11,7 +11,7 @@ RestAPIを通じて画像をアップロードでき、アップロードされ�
 ### 1. ラムダ関数の準備
 ```
 $cd ./src                           # ディレクトリに移動
-$zip -r ../image-uploader.zip       # ラムダ関数のコードをzipファイルに圧縮します。
+$zip -r ../image-uploader.zip .       # ラムダ関数のコードをzipファイルに圧縮します。
 ```
 
 
