@@ -64,10 +64,10 @@ resource "aws_lambda_permission" "allow_api_gateway_call" {
   source_arn    = "${aws_api_gateway_rest_api.image_api.execution_arn}/*/*/*"
 }
 
-# output "api_key_value" {
-#   value     = aws_api_gateway_api_key.image_api_key.value
-#   sensitive = true
-# }
+output "api_key_value" {
+  value     = aws_api_gateway_api_key.image_api_key.value
+  sensitive = true
+}
 
 output "api_gateway_api_endpoint" {
   value = aws_api_gateway_deployment.image_api_deployment.invoke_url
