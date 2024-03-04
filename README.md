@@ -1,4 +1,6 @@
-# 画像アップローダーのセットアップ手順
+# Simple Image Uploader
+S3、API Gateway、Lambdaを使用した簡易的な画像アップローダー。
+RestAPIを通じて画像をアップロードでき、アップロードされた画像はS3バケットに保存される。
 
 ## 必要なツール
 - AWS CLI
@@ -34,7 +36,7 @@ $terraform apply
 ```
 
 
-## APIキーの取得
+## APIキーの取得 (%が末尾についてるのが邪魔)
 デプロイ後、APIキーを取得
 ```
 $terraform output -raw api_key_value
